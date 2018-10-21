@@ -1,6 +1,7 @@
 /**Leetcode coding challenge
  * @param {number} x
  * @return {boolean}
+ * palindrome numbers first iteration
  */
 var isPalindrome = function(x) {
     palstr = x.toString();
