@@ -49,4 +49,3 @@ function swap(arr, i, j){
   arr[j] = temp;
 }
 
-#updated heapsort
