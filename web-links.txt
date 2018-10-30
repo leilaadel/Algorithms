@@ -6,3 +6,4 @@ Interviewing links
 
 
 front end links
+find more python ans js resources
