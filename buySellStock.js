@@ -12,9 +12,9 @@ var maxProfit = function(prices) {
     var max = 0;
     var maxval = 0;
     var x = [];
-    for(var i = 0; i < run; i++){
-        if (min > prices[i]){
-            min = prices[i];
+    for(var i = 0; i < run; i++){  ////compare locations, double check if you can add multiple entries
+        if (min > prices[i]){      ////next step would be adding first profitable margin found
+            min = prices[i];       ////are there more than one profit margin needed?
             minval = i;
             if (max < prices[i]){
                 max = prices[i];
