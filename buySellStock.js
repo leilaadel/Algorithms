@@ -13,14 +13,15 @@ var maxProfit = function(prices) {
     var maxval = 0;
     var x = [];
     for(var i = 0; i < run; i++){
-        if (min < prices[i]){
+        if (min > prices[i]){
             min = prices[i];
             minval = i;
+            if (max < prices[i]){
+                max = prices[i];
+                maxval = i;
+            }
         }
-        if (max > prices[i]){
-            max = prices[i];
-            maxval = i;
-        }
+
         }
     x.push(min);
     x.push(minval);
