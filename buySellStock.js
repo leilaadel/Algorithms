@@ -6,17 +6,18 @@
 var maxProfit = function(prices) {
     //buy on lowest day, sell on high, return profit
     //run max loop inside min loop
+    //compare all posibilities and just use greatest combo?
     var run = prices.length;
     var min = 100;
     var minval = 0;
     var max = 0;
     var maxval = 0;
     var x = [];
-    for(var i = 0; i < run; i++){  ////compare locations, double check if you can add multiple entries
-        if (min > prices[i]){      ////next step would be adding first profitable margin found
-            min = prices[i];       ////are there more than one profit margin needed?
+    for(var i = 0; i < run; i++){
+        if (min > prices[i]){
+            min = prices[i];
             minval = i;
-            if (max < prices[i]){
+            if (max < prices[i] && i>minval){
                 max = prices[i];
                 maxval = i;
             }
