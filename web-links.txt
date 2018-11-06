@@ -10,6 +10,9 @@ Interviewing links
 ----Javascript datastructures and algorithms
 **----https://github.com/trekhleb/javascript-algorithms
 
+----python algorithms
+----https://github.com/keon/algorithms
+
 front end links
 find more python ans js resources
 
