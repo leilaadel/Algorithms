@@ -1,0 +1,28 @@
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var pivotIndex = function(nums) {
+    var leftSum = 0;
+    var rightSum = 10;
+    var pivotIndex = 1;
+    while(leftSum !== rightSum){
+        for(var i = 0; i<pivotIndex; i++){
+            leftSum = leftSum + nums[i];
+        }
+        for(var j = 0; i>pivotIndex;j--){
+            rightSum = rightSum + nums[j];
+        }
+        if (rightSum === leftSum){
+            return pivotIndex;
+        }
+        else if (pivotIndex >= nums.length){
+            return -1;
+        }
+        else{
+            pivotIndex++;
+        }
+        var number = pivotIndex
+        return number;
+    }
+};
